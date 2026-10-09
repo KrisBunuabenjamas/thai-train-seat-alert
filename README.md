@@ -75,4 +75,6 @@ python -m train_alert --mode check
 
 วันที่ 9 ต.ค. 2026: ชุดทดสอบ 32 กรณีผ่านทั้งในเครื่องและ GitHub; [dry-run บน GitHub runner](https://github.com/KrisBunuabenjamas/thai-train-seat-alert/actions/runs/37946452570) อ่าน 10 กลุ่มตู้นอนสำเร็จโดยไม่มี error และ initialize state สำเร็จแล้ว
 
-**ยังไม่ได้เปิด schedule:** รอเจ้าของ repo เพิ่ม `DISCORD_WEBHOOK_URL` แล้วทดสอบ Discord/check ก่อนตั้ง `MONITOR_ENABLED=true` ไม่ต้อง initialize ซ้ำ
+ตั้งค่า `DISCORD_WEBHOOK_URL` แล้ว และ [Discord ตอบรับข้อความทดสอบ](https://github.com/KrisBunuabenjamas/thai-train-seat-alert/actions/runs/37953821897) สำเร็จ วันที่ 9 ต.ค. 2026 เวลาไทย
+
+[รอบตรวจพร้อมบันทึกสถานะ](https://github.com/KrisBunuabenjamas/thai-train-seat-alert/actions/runs/37953889909) สำเร็จเวลา 22:44 น. ได้ 10 กลุ่มตู้นอน ว่าง 0 ทั้งหมด ไม่มี error หรือข้อความค้างส่ง ตั้ง `MONITOR_ENABLED=true` แล้วเวลา 22:45 น. **ไม่ต้อง initialize ซ้ำ** ตรวจรอบอัตโนมัติล่าสุดในหน้า Actions เพื่อดูว่าตารางเวลาทำงานตามปกติ
