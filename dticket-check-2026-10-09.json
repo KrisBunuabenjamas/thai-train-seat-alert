@@ -1,0 +1,208 @@
+[
+  {
+    "date": "29/12/2026",
+    "trainNo": "75",
+    "tripId": "608910",
+    "departureTime": "08:45",
+    "arrivalTime": "16:55",
+    "checkedAt": "2026-10-09T18:14:13.7019552+07:00",
+    "coaches": [
+      {
+        "coachId": "124",
+        "coachDesc": "กซข.74 : รถโบกี้นั่ง ชั้น 3 พัดลม - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 198
+      },
+      {
+        "coachId": "142",
+        "coachDesc": "กซม.ป.62  : รถโบกี้นั่ง ชั้น 2 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 0
+      }
+    ],
+    "errorCode": "S_SUCCESS"
+  },
+  {
+    "date": "29/12/2026",
+    "trainNo": "25",
+    "tripId": "608894",
+    "departureTime": "20:25",
+    "arrivalTime": "05:39",
+    "checkedAt": "2026-10-09T18:14:14.4733932+07:00",
+    "coaches": [
+      {
+        "coachId": "147",
+        "coachDesc": "บนอ.ป.24.CN : รถโบกี้นั่งและนอน ชั้น 1 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "148",
+        "coachDesc": "บนท.ป.40.CN : รถโบกี้นั่งและนอน ชั้น 2 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "149",
+        "coachDesc": "บนท.ป.36.CN : รถโบกี้นั่งและนอน ชั้น 2 ปรับอากาศ - ผู้พิการ",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "150",
+        "coachDesc": "บนท.ป.40.CN : รถโบกี้นั่งและนอน ชั้น 2 ปรับอากาศ - สตรีและเด็ก",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      }
+    ],
+    "errorCode": "S_SUCCESS"
+  },
+  {
+    "date": "29/12/2026",
+    "trainNo": "133",
+    "tripId": "608922",
+    "departureTime": "21:25",
+    "arrivalTime": "07:02",
+    "checkedAt": "2026-10-09T18:14:15.1675806+07:00",
+    "coaches": [
+      {
+        "coachId": "123",
+        "coachDesc": "บชส.76 : รถโบกี้นั่ง ชั้น 3 พัดลม - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 382
+      },
+      {
+        "coachId": "128",
+        "coachDesc": "บสส.20 : รถโบกี้ชั้น 2 และ 3  พัดลม - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "530",
+        "coachDesc": "บนท.ป.26JR : รถโบกี้นอน ชั้น 2 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "550",
+        "coachDesc": "บชท.ป.64 JR : รถโบกี้นั่ง ชั้น 2 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 0
+      }
+    ],
+    "errorCode": "S_SUCCESS"
+  },
+  {
+    "date": "30/12/2026",
+    "trainNo": "75",
+    "tripId": "609145",
+    "departureTime": "08:45",
+    "arrivalTime": "16:55",
+    "checkedAt": "2026-10-09T18:14:17.6639384+07:00",
+    "coaches": [
+      {
+        "coachId": "124",
+        "coachDesc": "กซข.74 : รถโบกี้นั่ง ชั้น 3 พัดลม - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 164
+      },
+      {
+        "coachId": "142",
+        "coachDesc": "กซม.ป.62  : รถโบกี้นั่ง ชั้น 2 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 0
+      }
+    ],
+    "errorCode": "S_SUCCESS"
+  },
+  {
+    "date": "30/12/2026",
+    "trainNo": "25",
+    "tripId": "609129",
+    "departureTime": "20:25",
+    "arrivalTime": "05:39",
+    "checkedAt": "2026-10-09T18:14:18.4895795+07:00",
+    "coaches": [
+      {
+        "coachId": "147",
+        "coachDesc": "บนอ.ป.24.CN : รถโบกี้นั่งและนอน ชั้น 1 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "148",
+        "coachDesc": "บนท.ป.40.CN : รถโบกี้นั่งและนอน ชั้น 2 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "149",
+        "coachDesc": "บนท.ป.36.CN : รถโบกี้นั่งและนอน ชั้น 2 ปรับอากาศ - ผู้พิการ",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "150",
+        "coachDesc": "บนท.ป.40.CN : รถโบกี้นั่งและนอน ชั้น 2 ปรับอากาศ - สตรีและเด็ก",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      }
+    ],
+    "errorCode": "S_SUCCESS"
+  },
+  {
+    "date": "30/12/2026",
+    "trainNo": "133",
+    "tripId": "609157",
+    "departureTime": "21:25",
+    "arrivalTime": "07:02",
+    "checkedAt": "2026-10-09T18:14:19.2894127+07:00",
+    "coaches": [
+      {
+        "coachId": "123",
+        "coachDesc": "บชส.76 : รถโบกี้นั่ง ชั้น 3 พัดลม - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 300
+      },
+      {
+        "coachId": "128",
+        "coachDesc": "บสส.20 : รถโบกี้ชั้น 2 และ 3  พัดลม - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "530",
+        "coachDesc": "บนท.ป.26JR : รถโบกี้นอน ชั้น 2 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "1",
+        "coachSeatTypeTh": "นอน",
+        "availableSeatCount": 0
+      },
+      {
+        "coachId": "550",
+        "coachDesc": "บชท.ป.64 JR : รถโบกี้นั่ง ชั้น 2 ปรับอากาศ - ผู้โดยสารทั่วไป",
+        "coachSeatType": "2",
+        "coachSeatTypeTh": "นั่ง",
+        "availableSeatCount": 0
+      }
+    ],
+    "errorCode": "S_SUCCESS"
+  }
+]
