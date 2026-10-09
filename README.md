@@ -70,3 +70,9 @@ python -m train_alert --mode check
 - [Discord webhooks](https://docs.discord.com/developers/resources/webhook)
 
 ผลตรวจเริ่มต้นอยู่ใน `dticket-check-2026-10-09.json` เป็นหลักฐานในอดีต ไม่ใช่สถานะปัจจุบัน
+
+## สถานะการติดตั้งครั้งแรก
+
+วันที่ 9 ต.ค. 2026: ชุดทดสอบ 32 กรณีผ่านทั้งในเครื่องและ GitHub; [dry-run บน GitHub runner](https://github.com/KrisBunuabenjamas/thai-train-seat-alert/actions/runs/37946452570) อ่าน 10 กลุ่มตู้นอนสำเร็จโดยไม่มี error และ initialize state สำเร็จแล้ว
+
+**ยังไม่ได้เปิด schedule:** รอเจ้าของ repo เพิ่ม `DISCORD_WEBHOOK_URL` แล้วทดสอบ Discord/check ก่อนตั้ง `MONITOR_ENABLED=true` ไม่ต้อง initialize ซ้ำ
