@@ -1,5 +1,6 @@
 """Bounded HTTP transport; exception messages deliberately exclude URLs/tokens."""
 import http.cookiejar
+import http.client
 import json
 import time
 import urllib.error
@@ -52,7 +53,7 @@ class HTTP:
                             raise HttpError(status) from None
                 if delay > 60 or attempt == self.attempts - 1:
                     raise HttpError(status) from None
-            except (urllib.error.URLError, TimeoutError, OSError):
+            except (urllib.error.URLError, TimeoutError, OSError, http.client.HTTPException):
                 if attempt == self.attempts - 1:
                     raise HttpError() from None
             time.sleep(delay)

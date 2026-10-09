@@ -53,6 +53,18 @@ class ReaderTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             parse_trips([dict(TRIP, departureTime='bad')], '2026-12-30')
 
+    def test_duplicate_train_numbers_cannot_collapse_observation_keys(self):
+        with self.assertRaises(ValueError):
+            parse_trips([TRIP, dict(TRIP, tripId='different')], '2026-12-30')
+
+    def test_train_expiring_during_search_is_not_polled(self):
+        http = ScriptedHTTP(['home', 'SmartUtil.hiddenParams.viewStateHolder = "initial";',
+                             {'errorCode': 'S_SUCCESS', 'data': [TRIP]}])
+        after_departure = datetime(2026, 12, 30, 14, tzinfo=timezone.utc)
+        rows, errors = DTicketClient(http, clock=lambda: after_departure).check(CONFIG, NOW)
+        self.assertEqual((rows, errors), ([], []))
+        self.assertEqual(len(http.calls), 3)
+
     def test_verified_request_sequence_and_rotating_state(self):
         http = ScriptedHTTP(['home', 'SmartUtil.hiddenParams.viewStateHolder = "initial";',
             {'errorCode': 'S_SUCCESS', 'viewStateHolder': 'next', 'data': [TRIP]},

@@ -2,6 +2,7 @@
 from dataclasses import asdict, dataclass
 from datetime import date, datetime, time, timedelta, timezone
 import re
+import time as monotonic_time
 
 from .http import HTTP, HttpError, decode_json
 
@@ -41,16 +42,17 @@ def departure(trip, day):
 def parse_trips(rows, day):
     if not isinstance(rows, list) or not rows:
         raise ValueError('No verified trips returned')
-    seen = set()
+    seen, train_numbers = set(), set()
     for trip in rows:
         if not isinstance(trip, dict):
             raise ValueError('Invalid trip record')
         for field in ('tripId', 'trainNo', 'arrivalTime', 'departureDate'):
             required_string(trip, field)
-        if trip['departureDate'][:10] != day or trip['tripId'] in seen:
+        if trip['departureDate'][:10] != day or trip['tripId'] in seen or trip['trainNo'] in train_numbers:
             raise ValueError('Wrong date or duplicate trip')
         departure(trip, day)
         seen.add(trip['tripId'])
+        train_numbers.add(trip['trainNo'])
     return rows
 
 
@@ -84,8 +86,9 @@ def parse_coaches(rows, trip, day, config):
 
 
 class DTicketClient:
-    def __init__(self, http=None):
+    def __init__(self, http=None, clock=None):
         self.http = http or HTTP()
+        self.clock = clock
         self.page_state = ''
 
     def api(self, path, fields):
@@ -99,6 +102,8 @@ class DTicketClient:
         return result.get('data')
 
     def check(self, config, now):
+        started = monotonic_time.monotonic()
+        clock = self.clock or (lambda: now + timedelta(seconds=monotonic_time.monotonic() - started))
         observations, errors = [], []
         for day in config['dates']:
             if date.fromisoformat(day) < now.astimezone(BANGKOK).date():
@@ -119,7 +124,7 @@ class DTicketClient:
                     'tripType': '1', 'provinceStartId': config['origin'],
                     'provinceEndId': config['destination'], 'dateStart': search_date, 'dateEnd': ''}), day)
                 for trip in trips:
-                    if departure(trip, day) <= now:
+                    if departure(trip, day) <= clock():
                         continue
                     try:
                         data = self.api('booking/booking/getTrainCoach', {
