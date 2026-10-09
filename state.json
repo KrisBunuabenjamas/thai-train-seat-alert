@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "config": "093590ca8893d68ab8a6889a68579f9f7969996dceaf1192e0bf4f30f9eae442",
+  "entries": {},
+  "pending": {},
+  "checked_at": null,
+  "health": {
+    "failures": 0,
+    "notified": false,
+    "errors": []
+  }
+}
