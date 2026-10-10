@@ -73,6 +73,10 @@ python -m train_alert --mode check
 
 ## สถานะการติดตั้งครั้งแรก
 
+อัปเดต 10 ต.ค. 2026: รอบอัตโนมัติทำงานสำเร็จ แต่เริ่มเวลาไทย 02:49, 06:36 และ 09:43 น. ห่างกันประมาณ 3–4 ชั่วโมง แม้ cron ตั้งทุก 5 นาที **ยังไม่ผ่านเป้าหมายความถี่สำหรับเฝ้าที่นั่งหลุด** ต้องเพิ่มตัวตั้งเวลาที่เหมาะสม ห้ามถือว่าระบบตรวจทุก 5 นาทีแล้ว
+
+[รอบ 09:44 น.](https://github.com/KrisBunuabenjamas/thai-train-seat-alert/actions/runs/38017986479) พบ 1 ที่ในตู้สตรีและเด็ก ขบวน 25 วันที่ 29 ธ.ค. และส่ง Discord สำเร็จ 1 ข้อความ แต่ [รอบที่สั่งเพิ่ม เวลา 11:18 น.](https://github.com/KrisBunuabenjamas/thai-train-seat-alert/actions/runs/38023556768) กลับมาเต็มทุกกลุ่ม ไม่มี error หรือข้อความค้างส่ง ผลเหล่านี้เป็นสถานะในอดีต
+
 วันที่ 9 ต.ค. 2026: ชุดทดสอบ 32 กรณีผ่านทั้งในเครื่องและ GitHub; [dry-run บน GitHub runner](https://github.com/KrisBunuabenjamas/thai-train-seat-alert/actions/runs/37946452570) อ่าน 10 กลุ่มตู้นอนสำเร็จโดยไม่มี error และ initialize state สำเร็จแล้ว
 
 ตั้งค่า `DISCORD_WEBHOOK_URL` แล้ว และ [Discord ตอบรับข้อความทดสอบ](https://github.com/KrisBunuabenjamas/thai-train-seat-alert/actions/runs/37953821897) สำเร็จ วันที่ 9 ต.ค. 2026 เวลาไทย

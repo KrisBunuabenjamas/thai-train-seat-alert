@@ -1,5 +1,8 @@
 # Execution ledger — docs/superpowers/plans/2026-10-09-train-alert.md
 
+- Follow-up 2026-10-10: schedule runs 37982896238, 38005239689, 38017986479 succeeded, but dispatch gaps are 3–4 hours despite the five-minute cron; cadence requirement remains unmet. Asked user whether to use an external cloud scheduler or keep this PC online for local scheduling. No replacement scheduler installed pending that infrastructure choice.
+- Actual opening: run 38017986479 at 09:44 Bangkok observed one seat for Dec 29 / train 25 / coach 150 (women and children), sent=1, errors=[]. Manual follow-up 38023556768 succeeded; persisted state at 11:18:44 Bangkok has all counts zero, pending=0, health failures=0. Initial alert delivery works; timely recurring dispatch is still unresolved.
+
 - Ruling: user explicitly requested implementation now; proceed inline without another plan approval gate.
 - Ruling: initialize an isolated repository in the empty project, not a worktree of the unrelated home-directory repository.
 - Ruling: use standard library HTTP and unittest to minimize dependencies and preserve Windows/Linux portability.
